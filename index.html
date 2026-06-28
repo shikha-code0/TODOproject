@@ -3,17 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="A professional todo list app to help you stay organized and get things done.">
+  <meta name="description" content="Shy_xhaTodo is a modern productivity platform that helps you organize tasks, manage priorities, and stay focused every day.">
   <title>Shy_xhaTodo </title>
+  <link rel="icon" type="image/jpeg" href="favicon.jpeg">
+
+  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <!-- Header & Navigation Section-->
   <header>
+             
+    
     <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
       <div class="container">
-        <a class="navbar-brand fw-bold" href="#">TaskFlow</a>
+        <a class="navbar-brand" href="index.html">
+          <img src="logo.jpeg" alt="Shy_XhaTodo Logo" width="140">
+      </a>
         <button
           class="navbar-toggler"
           type="button"
@@ -28,22 +38,22 @@
         <div class="collapse navbar-collapse" id="mainNavbar">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
             <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home</a>
+          </li>
+            <li class="nav-item">
               <a class="nav-link" href="#features">Features</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#preview">Preview</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#how-it-works">How It Works</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#use-cases">Use Cases</a>
-            </li>
-            <li class="nav-item ms-lg-2">
-              <a class="nav-link" href="#">Log In</a>
+            
+              <li class="nav-item">
+            
+              <a class="nav-link" href="login.html">Log In</a>
             </li>
             <li class="nav-item ms-lg-2">
-              <a class="btn btn-primary" href="#">Get Started</a>
+            
+              <a class="btn btn-primary" href="signup.html">Get Started</a>
             </li>
           </ul>
         </div>
@@ -54,26 +64,28 @@
   <main>
 
     <!-- Hero Section-->
+
     <section class="py-5 bg-light" id="hero">
       <div class="container py-5">
         <div class="row align-items-center g-5">
           <div class="col-lg-6">
             <h1 class="display-4 fw-bold mb-3">Stay organized. Get things done.</h1>
             <p class="lead text-muted mb-4">
-              shy_xha helps you capture tasks, set priorities, and focus on what matters most — all in one clean, professional workspace.
+              
+              Shy_xhaTodo helps you capture tasks, organize your day, set priorities, and stay productive with a clean and intuitive workspace.
             </p>
             <div class="d-flex flex-wrap align-items-center">
-              <a class="btn btn-primary btn-lg me-3 mb-2" href="#">Start </a>
+          
+              <a class="btn btn-primary btn-lg me-3 mb-2" href="signup.html">Get Started</a>
               <a class="btn btn-outline-secondary btn-lg mb-2" href="#how-it-works">See How It Works</a>
             </div>
           </div>
           <div class="col-lg-6">
             <figure class="mb-0">
               <img
-                src="https://via.placeholder.com/600x400?text=TaskFlow+App+Preview"
+                src="hero-image.jpeg"
                 class="img-fluid rounded shadow"
-                alt="Preview of the TaskFlow todo list application interface"
-              >
+                alt="Preview of the Shy_xhaTodo application interface">
             </figure>
           </div>
         </div>
@@ -95,7 +107,7 @@
           <div class="col-md-4">
             <blockquote class="mb-0">
               <p class="fst-italic text-muted mb-1">"The cleanest todo app I've ever used."</p>
-              <footer class="text-muted small">— Alex M., Product Manager</footer>
+              <footer class="text-muted small">— Productivity Enthusiast</footer>
             </blockquote>
           </div>
         </div>
@@ -175,11 +187,12 @@
     </section>
 
     <!-- Product Preview Section-->
+    
     <section class="py-5 bg-light" id="preview">
       <div class="container py-4">
         <div class="row align-items-center g-5">
           <div class="col-lg-6 order-lg-2">
-            <h2 class="fw-bold mb-3">See TaskFlow in action</h2>
+            <h2 class="fw-bold mb-3">See shy_xhaTodo in action</h2>
             <p class="text-muted mb-4">
               A thoughtfully designed interface that makes managing your day effortless. Add tasks, set due dates, and track progress at a glance.
             </p>
@@ -193,9 +206,9 @@
           <div class="col-lg-6 order-lg-1">
             <figure class="mb-0">
               <img
-                src="https://via.placeholder.com/600x450?text=Product+Screenshot"
+              src="preview.jpeg"
                 class="img-fluid rounded shadow"
-                alt="Detailed screenshot of TaskFlow showing tasks, priorities, and due dates"
+                alt="Detailed screenshot of shy_xhaTodo showing tasks, priorities, and due dates"
               >
             </figure>
           </div>
@@ -247,7 +260,7 @@
       <div class="container py-4">
         <div class="text-center mb-5">
           <h2 class="fw-bold">Built for everyone</h2>
-          <p class="text-muted lead">Whether at work, school, or home — TaskFlow adapts to your life.</p>
+          <p class="text-muted lead">Whether at work, school, or home — shy_xhaTodo adapts to your life.</p>
         </div>
         <div class="row g-4">
           <article class="col-md-4">
@@ -287,11 +300,12 @@
     <!-- Final Call-to-Action Section-->
     <section class="py-5 bg-primary text-white" id="cta">
       <div class="container py-4 text-center">
-        <h2 class="fw-bold mb-3">Ready to take control of your day?</h2>
+        <h2 class="fw-bold mb-3">Your productivity deserves a beautiful home.</h2>
         <p class="lead mb-4">
-          Join thousands of users who stay organized with TaskFlow. It's free to get started.
+          Plan your day with clarity, stay focused on what matters, and enjoy a workspace designed to inspire.
         </p>
-        <a class="btn btn-light btn-lg" href="#">Create Your Free Account</a>
+        
+        <a class="btn btn-light btn-lg" href="signup.html">Welcome In ✨</a>
       </div>
     </section>
 
@@ -302,9 +316,10 @@
     <div class="container">
       <div class="row g-4">
         <div class="col-lg-4">
-          <h2 class="h5 mb-3">TaskFlow</h2>
+          <h2 class="h5 mb-3">Shy_xhaTodo</h2>
           <p class="text-white-50 mb-0">
-            A professional todo list app designed to help you focus, organize, and accomplish more every day.
+          
+            Shy_xhaTodo is a modern productivity app designed to help you focus, stay organized, and accomplish more every day.
           </p>
         </div>
         <div class="col-6 col-lg-2">
@@ -333,18 +348,21 @@
         <div class="col-6 col-lg-2">
           <h3 class="h6 text-uppercase mb-3">Account</h3>
           <ul class="list-unstyled">
-            <li class="mb-2"><a class="link-light text-decoration-none" href="#">Log In</a></li>
-            <li class="mb-2"><a class="link-light text-decoration-none" href="#">Sign Up</a></li>
+            <li class="mb-2">
+            <a class="link-light text-decoration-none" href="login.html">Log In</a></li>
+            <li class="mb-2">
+              <a class="link-light text-decoration-none" href="signup.html">Sign Up</a></li>
           </ul>
         </div>
       </div>
       <hr class="border-secondary my-4">
       <p class="text-white-50 text-center mb-0 small">
-        &copy; 2026 TaskFlow. All rights reserved.
+        &copy; 2026 shy_xhaTodo. All rights reserved.
       </p>
     </div>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
