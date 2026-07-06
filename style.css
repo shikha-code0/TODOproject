@@ -1152,3 +1152,677 @@ footer .small {
     padding: 2.25rem !important;
   }
 }
+/* ==========================================================
+   Global Bootstrap Theme Overrides
+   ========================================================== */
+
+/* Buttons */
+.btn-primary{
+  background-color: var(--color-primary) !important;
+  border-color: var(--color-primary) !important;
+  color: #fff !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus{
+  background-color: var(--color-primary-hover) !important;
+  border-color: var(--color-primary-hover) !important;
+  box-shadow: var(--shadow-primary);
+}
+
+.btn-outline-primary{
+  color: var(--color-primary) !important;
+  border-color: var(--color-primary) !important;
+}
+
+.btn-outline-primary:hover{
+  background: var(--color-primary) !important;
+  color:#fff !important;
+}
+
+/* Progress Bar */
+.progress{
+  background: var(--color-secondary-soft);
+  border-radius:50px;
+}
+
+.progress-bar{
+  background: var(--color-primary) !important;
+}
+
+/* Navbar Active Link */
+.nav-link.active{
+  color: var(--color-primary) !important;
+  font-weight:600;
+}
+
+/* Bootstrap Icons / FontAwesome Icons */
+.fa-solid,
+.fa-regular,
+.fa-brands{
+  color: var(--color-primary);
+}
+
+/* Dashboard Cards */
+.card{
+  border-radius:24px;
+  border:1px solid var(--color-border);
+  box-shadow:var(--shadow-sm);
+  transition:.3s ease;
+}
+
+.card:hover{
+  transform:translateY(-6px);
+  box-shadow:var(--shadow-lg);
+}
+
+/* Dashboard Background */
+body{
+  background:var(--color-bg);
+}
+
+/* Dashboard Section */
+.dashboard-section{
+  background:var(--color-bg);
+}
+/* ==========================================================
+                    DASHBOARD STYLES
+========================================================== */
+
+#dashboard-hero{
+  padding:70px 0;
+}
+
+.hero-box{
+
+  background:linear-gradient(135deg,#F8F0F2,#FFFFFF);
+
+  border-radius:32px;
+
+  padding:60px;
+
+  box-shadow:0 20px 60px rgba(176,122,135,.12);
+
+  overflow:hidden;
+
+  position:relative;
+
+}
+
+.hero-box::before{
+
+  content:"";
+
+  width:280px;
+
+  height:280px;
+
+  background:#E7D6D9;
+
+  opacity:.4;
+
+  border-radius:50%;
+
+  position:absolute;
+
+  top:-80px;
+
+  right:-60px;
+
+  filter:blur(40px);
+
+}
+
+.hero-badge{
+
+  display:inline-block;
+
+  background:#E7D6D9;
+
+  color:#8C5D6B;
+
+  padding:8px 18px;
+
+  border-radius:50px;
+
+  font-weight:600;
+
+  margin-bottom:20px;
+
+}
+
+.hero-title{
+
+  font-family:var(--font-heading);
+
+  font-size:3rem;
+
+  color:var(--color-text);
+
+  margin-bottom:18px;
+
+}
+
+.hero-name{
+
+  color:var(--color-primary);
+
+}
+
+.hero-text{
+
+  color:var(--color-text-muted);
+
+  font-size:1.1rem;
+
+  line-height:1.8;
+
+  margin-bottom:35px;
+
+}
+
+.hero-buttons{
+
+  display:flex;
+
+  gap:15px;
+
+  flex-wrap:wrap;
+
+}
+
+.hero-image{
+
+  max-width:430px;
+
+  animation:float 5s ease-in-out infinite;
+
+}
+/* =====================================
+        Statistics
+===================================== */
+
+.dashboard-card{
+
+  background:#fff;
+
+  border-radius:24px;
+
+  padding:35px;
+
+  text-align:center;
+
+  box-shadow:0 15px 35px rgba(0,0,0,.06);
+
+  transition:.35s;
+
+  height:100%;
+
+}
+
+.dashboard-card:hover{
+
+  transform:translateY(-10px);
+
+  box-shadow:0 25px 50px rgba(176,122,135,.18);
+
+}
+
+.dashboard-icon{
+
+  width:70px;
+
+  height:70px;
+
+  margin:auto;
+
+  margin-bottom:20px;
+
+  border-radius:50%;
+
+  display:flex;
+
+  justify-content:center;
+
+  align-items:center;
+
+  background:#F5ECEE;
+
+  color:#B07A87;
+
+  font-size:30px;
+
+}
+
+.dashboard-card h2{
+
+  font-size:2.4rem;
+
+  font-weight:700;
+
+  color:#4B3B40;
+
+}
+
+.dashboard-card p{
+
+  color:#7A6A70;
+
+  margin:0;
+
+}
+.planner-card{
+
+  background:#fff;
+
+  border-radius:28px;
+
+  padding:35px;
+
+  margin-bottom:25px;
+
+  box-shadow:0 15px 35px rgba(0,0,0,.05);
+
+}
+
+.card-header-custom{
+
+  margin-bottom:25px;
+
+}
+
+.card-header-custom h3{
+
+  font-family:var(--font-heading);
+
+  color:#4B3B40;
+
+  font-size:1.6rem;
+
+}
+.form-control,
+.form-select{
+
+    border-radius:16px;
+
+    padding:15px;
+
+    border:1px solid #E8DDDF;
+
+}
+
+.form-control:focus,
+.form-select:focus{
+
+    border-color:#B07A87;
+
+    box-shadow:0 0 0 .2rem rgba(176,122,135,.18);
+
+}
+
+.form-label{
+
+    font-weight:600;
+
+    color:#4B3B40;
+
+}
+.input-group-text{
+
+  border-radius:16px 0 0 16px;
+
+  background:#F5ECEE;
+
+  border:none;
+
+}
+.filter-buttons{
+
+  display:flex;
+
+  gap:12px;
+
+  flex-wrap:wrap;
+
+}
+
+.filter-btn{
+
+  border-radius:30px;
+
+  padding:10px 24px;
+
+}
+#taskContainer{
+
+  min-height:300px;
+
+}
+.widget-title{
+
+  font-family:var(--font-heading);
+
+  margin-bottom:20px;
+
+  color:#4B3B40;
+
+}
+
+blockquote{
+
+  font-size:1rem;
+
+  line-height:1.8;
+
+  color:#7A6A70;
+
+  font-style:italic;
+
+}
+
+.progress{
+
+  height:10px;
+
+  border-radius:30px;
+
+  background:#E7D6D9;
+
+}
+
+.progress-bar{
+
+  background:#B07A87;
+
+}
+#emptyState img{
+
+  width:180px;
+
+}
+
+#emptyState h4{
+
+  font-family:var(--font-heading);
+
+  color:#4B3B40;
+
+}
+@media(max-width:992px){
+
+  .hero-box{
+  
+  padding:35px;
+  
+  }
+  
+  .hero-title{
+  
+  font-size:2.3rem;
+  
+  }
+  
+  .hero-image{
+  
+  margin-top:40px;
+  
+  }
+  
+  }
+  .priority-badge{
+
+    border-radius:20px;
+
+    padding:6px 14px;
+
+    font-weight:600;
+
+}
+
+.priority-badge.high{
+
+    background:#F8D7DA;
+
+    color:#B22222;
+
+}
+
+.priority-badge.medium{
+
+    background:#FFF4CC;
+
+    color:#A67C00;
+
+}
+
+.priority-badge.low{
+
+    background:#D9F5E3;
+
+    color:#2E8B57;
+
+}
+.completed-task{
+
+  opacity:.7;
+
+  border-left:6px solid #9BB89C;
+
+}
+
+.completed-task h4{
+
+  text-decoration:line-through;
+
+}
+/* =====================================
+   TASK CARDS
+===================================== */
+
+.task-card{
+
+  background:#fff;
+
+  border-radius:24px;
+
+  padding:25px;
+
+  margin-bottom:20px;
+
+  border:1px solid #E8DDDF;
+
+  box-shadow:0 10px 25px rgba(0,0,0,.05);
+
+  transition:.35s;
+
+}
+
+.task-card:hover{
+
+  transform:translateY(-6px);
+
+  box-shadow:0 18px 40px rgba(176,122,135,.18);
+
+}
+
+.task-top{
+
+  display:flex;
+
+  justify-content:space-between;
+
+  align-items:center;
+
+  margin-bottom:12px;
+
+}
+
+.task-title{
+
+  font-size:1.3rem;
+
+  font-weight:600;
+
+  color:#4B3B40;
+
+}
+
+.task-description{
+
+  color:#7A6A70;
+
+  margin:15px 0;
+
+  line-height:1.7;
+
+}
+
+.task-bottom{
+
+  display:flex;
+
+  justify-content:space-between;
+
+  align-items:center;
+
+  flex-wrap:wrap;
+
+  gap:15px;
+
+}
+
+.task-date{
+
+  background:#F5ECEE;
+
+  color:#8C5D6B;
+
+  padding:8px 16px;
+
+  border-radius:30px;
+
+  font-size:.9rem;
+
+}
+
+.task-actions{
+
+  display:flex;
+
+  gap:10px;
+
+}
+
+.task-actions button{
+
+  border:none;
+
+  border-radius:14px;
+
+  padding:10px 16px;
+
+  transition:.3s;
+
+}
+
+.edit-btn{
+
+  background:#E7D6D9;
+
+}
+
+.delete-btn{
+
+  background:#F8D7DA;
+
+}
+
+.complete-btn{
+
+  background:#D9F5E3;
+
+}
+
+.task-actions button:hover{
+
+  transform:scale(1.08);
+
+}
+/* =====================================
+BUTTONS
+===================================== */
+
+.btn-primary{
+
+  background:#B07A87;
+
+  border:none;
+
+}
+
+.btn-primary:hover{
+
+  background:#8C5D6B;
+
+}
+
+.btn-outline-primary{
+
+  color:#B07A87;
+
+  border-color:#B07A87;
+
+}
+
+.btn-outline-primary:hover{
+
+  background:#B07A87;
+
+  color:white;
+
+}
+/* =====================================
+Responsive
+===================================== */
+
+@media(max-width:768px){
+
+  .hero-buttons{
+  
+  flex-direction:column;
+  
+  }
+  
+  .task-bottom{
+  
+  flex-direction:column;
+  
+  align-items:flex-start;
+  
+  }
+  
+  .dashboard-card{
+  
+  padding:25px;
+  
+  }
+  
+  .planner-card{
+  
+  padding:25px;
+  
+  }
+  
+  .hero-title{
+  
+  font-size:2rem;
+  
+  }
+  
+  }
+  .task-card{
+
+    animation:fadeInUp .5s ease;
+
+}
+
