@@ -4,7 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta
+    name="description"
+    content="shy_xhaTodo - Beautiful Productivity Planner">
+    
+    <meta
+    name="theme-color"
+    content="#B07A87">
     <title>Dashboard | shy_xhaTodo</title>
 
     <link rel="icon" href="favicon.jpeg" type="image/jpeg">
@@ -25,70 +31,83 @@
 
 <body>
 
+    
     <!-- ==========================
          HEADER
     ========================== -->
 
     <header>
 
-        <nav class="navbar navbar-expand-lg">
+    
+        <nav class="navbar navbar-expand-lg custom-navbar">
 
             <div class="container">
-
-                <a class="navbar-brand" href="index.html">
-
-                    <img src="logo.jpeg"
-                        alt="Logo"
-                        width="150">
-
-                </a>
-
-                <button class="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbar">
-
-                    <span class="navbar-toggler-icon"></span>
-
-                </button>
-
-                <div class="collapse navbar-collapse"
-                    id="navbar">
-
-                    <ul class="navbar-nav ms-auto align-items-lg-center">
-
-                        <li class="nav-item">
-                            <a class="nav-link active"
-                                href="dashboard.html">
-                                Dashboard
-                            </a>
-                        </li>
-
-                        <li class="nav-item ms-lg-3">
-                            <a class="nav-link"
-                                href="#">
-                                Profile
-                            </a>
-                        </li>
-
-                        <li class="nav-item ms-lg-3">
-
-                            <a class="btn btn-primary"
-                                href="index.html">
-
-                                Logout
-
-                            </a>
-
-                        </li>
-
-                    </ul>
-
-                </div>
-
+            
+            <a class="navbar-brand" href="index.html">
+            
+            <img src="logo.jpeg" width="45">
+            
+            <span>shy_xhaTodo</span>
+            
+            </a>
+            
+            <button class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav">
+            
+            ☰
+            
+            </button>
+            
+            <div class="collapse navbar-collapse"
+            id="navbarNav">
+            
+            <ul class="navbar-nav ms-auto">
+            
+            <li class="nav-item">
+            <a class="nav-link" href="dashboard.html">Dashboard</a>
+            </li>
+            
+            <li class="nav-item">
+            <a class="nav-link" href="analytics.html">Analytics</a>
+            </li>
+            
+            <li class="nav-item">
+            <a class="nav-link" href="calendar.html">Calendar</a>
+            </li>
+            
+            <li class="nav-item">
+            <a class="nav-link" href="notes.html">Notes</a>
+            </li>
+            
+            <li class="nav-item">
+            <a class="nav-link" href="pomodoro.html">Focus</a>
+            </li>
+            
+            <li class="nav-item">
+            <a class="nav-link" href="habits.html">Habits</a>
+            </li>
+            
+            <li class="nav-item">
+            <a class="nav-link" href="passwords.html">Vault</a>
+            </li>
+            
+            <li class="nav-item">
+            <a class="nav-link" href="profile.html">Profile</a>
+            </li>
+            
+            <li class="nav-item">
+            <a class="nav-link" href="settings.html">Settings</a>
+            </li>
+            
+            </ul>
+            
             </div>
-
-        </nav>
+            
+            </div>
+            
+            </nav>
 
     </header>
 
@@ -103,7 +122,7 @@
      Dashboard Hero Section
 ========================================== -->
 
-<section id="dashboard-hero" class="py-5">
+<sec id="dashboard-hero" class="py-5">
 
       <div class="container">
   
@@ -134,135 +153,72 @@
   
                       </h1>
                       <p id="todayDate" class="text-muted"></p>
-  
-                      <p class="hero-text">
-  
-                          Stay organized, stay inspired, and accomplish every goal beautifully with
-                          <strong>shy_xhaTodo.</strong>
-  
-                      </p>
-  
-                      <div class="hero-buttons">
-  
-                        <a href="#taskForm" class="btn btn-primary btn-lg">
-                            ➕ Add New Task
+
+
+                      <div class="row">
+
+                        <div class="col-md-7">
+                        
+                        <p class="hero-text">
+                        
+                        Let's make today productive and beautiful ✨
+                        
+                        </p>
+                        
+                        <div class="hero-buttons">
+                        
+                        <a
+                        href="#taskForm"
+                        class="btn btn-primary">
+                        
+                        ➕ Add New Task
+                        
                         </a>
                         
-                        <a href="#taskContainer" class="btn btn-outline-primary btn-lg">
-                            View Today's Tasks
+                        <a
+                        href="#taskContainer"
+                        class="btn btn-outline-primary">
+                        
+                        Today's Plan
+                        
                         </a>
-                      </div>
-  
-                  </div>
-  
-                  <!-- Right Image -->
-  
-                  <div class="col-lg-5 text-center">
-  
-                      <img
-                          src="hero-image.jpeg"
-                          alt="Planner"
-                          class="img-fluid hero-image">
-  
-                  </div>
-  
-              </div>
-  
-          </div>
-  
-      </div>
-  
-  </section>
+                        
+                        </div>
+                        
+                        </div>
+                        
+                        <div class="col-md-5">
+                        
+                        <div class="planner-card text-center shadow-none">
+                        
+                        <h5>
+                        
+                        ❤️ Daily Motivation
+                        
+                        </h5>
+                        
+                        <p>
+                        
+                        Organize beautifully.
+                        
+                        Achieve effortlessly.
+                        
+                        </p>
+                        
+                        <img
+                        src="girl.png"
+                        class="img-fluid">
+                        
+                        </div>
+                        
+                        </div>
+                        
+                        </div>
+
+
 
       
-        <!-- ==========================================
-     Statistics Section
-========================================== -->
-
-<section id="statistics" class="py-4">
-
-      <div class="container">
-  
-          <div class="row g-4">
-  
-              <!-- Total Tasks -->
-  
-              <div class="col-md-6 col-xl-3">
-  
-                  <div class="dashboard-card">
-  
-                      <div class="dashboard-icon">
-                          <i class="bi bi-list-check"></i>
-                      </div>
-  
-                      <h2 id="totalTasks">0</h2>
-  
-                      <p>Total Tasks</p>
-  
-                  </div>
-  
-              </div>
-  
-              <!-- Completed -->
-  
-              <div class="col-md-6 col-xl-3">
-  
-                  <div class="dashboard-card">
-  
-                      <div class="dashboard-icon">
-                          <i class="bi bi-check-circle-fill"></i>
-                      </div>
-  
-                      <h2 id="completedTasks">0</h2>
-  
-                      <p>Completed</p>
-  
-                  </div>
-  
-              </div>
-  
-              <!-- Pending -->
-  
-              <div class="col-md-6 col-xl-3">
-  
-                  <div class="dashboard-card">
-  
-                      <div class="dashboard-icon">
-                          <i class="bi bi-hourglass-split"></i>
-                      </div>
-  
-                      <h2 id="pendingTasks">0</h2>
-  
-                      <p>Pending</p>
-  
-                  </div>
-  
-              </div>
-  
-              <!-- High Priority -->
-  
-              <div class="col-md-6 col-xl-3">
-  
-                  <div class="dashboard-card">
-  
-                      <div class="dashboard-icon">
-                          <i class="bi bi-star-fill"></i>
-                      </div>
-  
-                      <h2 id="priorityTasks">0</h2>
-  
-                      <p>High Priority</p>
-  
-                  </div>
-  
-              </div>
-  
-          </div>
-  
-      </div>
-  
-  </section>
-
+    
        
         <!-- ==========================================
      Dashboard Content
@@ -273,367 +229,309 @@
       <div class="container">
   
           <div class="row g-4">
-  
-              <!-- ================= LEFT COLUMN ================= -->
-  
-              <div class="col-lg-8">
-  
-                  <!-- Add Task Card -->
-  
-                 
 
-                            <!-- =========================
-Add Task Card
-========================= -->
 
-<div class="planner-card p-4 mb-4">
+            <div class="col-lg-8">
 
-    <h3 class="section-title">
-        ✨ Add New Task
-    </h3>
-
-    <form id="taskForm">
-
-        <div class="mb-3">
-
-            <label class="form-label">
-                Task Title
-            </label>
-
-            <input
-                id="taskTitle"
-                type="text"
-                class="form-control"
-                placeholder="Enter task title">
-
-        </div>
-
-        <div class="mb-3">
-
-            <label class="form-label">
-                Description
-            </label>
-
-            <textarea
-                id="taskDescription"
-                rows="3"
-                class="form-control"
-                placeholder="Describe your task"></textarea>
-
-        </div>
-
-        <div class="row">
-
-            <div class="col-md-4 mb-3">
-
-                <label>Category</label>
-
-                <select
-                    id="taskCategory"
-                    class="form-select">
-
-                    <option>Study</option>
-                    <option>Work</option>
-                    <option>Personal</option>
-                    <option>Shopping</option>
-
-                </select>
-
-            </div>
-
-            <div class="col-md-4 mb-3">
-
-                <label>Priority</label>
-
-                <select
-                    id="taskPriority"
-                    class="form-select">
-
-                    <option>High</option>
-                    <option>Medium</option>
-                    <option>Low</option>
-
-                </select>
-
-            </div>
-
-            <div class="col-md-4 mb-3">
-
-                <label>Due Date</label>
-
-                <input
-                    id="taskDate"
-                    type="date"
-                    class="form-control">
-
-            </div>
-
-        </div>
-
-        <button
-            class="btn btn-primary"
-            type="submit">
-
-            ➕ Add Task
-
-        </button>
-
-    </form>
-
-</div>
-                    
-                            <!-- Task Title -->
-                    
-                            <div class="mb-4">
-                    
-                                <label for="taskTitle" class="form-label">
-                    
-                                    Task Title
-                    
-                                </label>
-                    
-                                <input
-                                    type="text"
-                                    id="taskTitle"
-                                    class="form-control"
-                                    placeholder="What would you like to accomplish?"
-                                    required>
-                    
-                            </div>
-                    
-                            <!-- Description -->
-                    
-                            <div class="mb-4">
-                    
-                                <label for="taskDescription" class="form-label">
-                    
-                                    Description
-                    
-                                </label>
-                    
-                                <textarea
-                                    id="taskDescription"
-                                    rows="4"
-                                    class="form-control"
-                                    placeholder="Add a few notes about this task..."></textarea>
-                    
-                            </div>
-                    
-                            <div class="row">
-                    
-                                <!-- Category -->
-                    
-                                <div class="col-md-4 mb-4">
-                    
+                <!-- ================= Add Task + Overview ================= -->
+            
+                <div class="row g-4">
+            
+                    <!-- Add Task -->
+            
+                    <div class="col-lg-7">
+            
+                        <div class="planner-card h-100">
+            
+                            <h3 class="widget-title">
+                                ✨ Add New Task
+                            </h3>
+            
+                            <form id="taskForm">
+            
+                                <div class="mb-3">
+            
                                     <label class="form-label">
-                    
-                                        Category
-                    
+                                        Task Title
                                     </label>
-                    
-                                    <select
-                                        id="taskCategory"
-                                        class="form-select">
-                    
-                                        <option>Personal</option>
-                    
-                                        <option>Work</option>
-                    
-                                        <option>Study</option>
-                    
-                                        <option>Shopping</option>
-                    
-                                        <option>Health</option>
-                    
-                                        <option>Other</option>
-                    
-                                    </select>
-                    
-                                </div>
-                    
-                                <!-- Priority -->
-                    
-                                <div class="col-md-4 mb-4">
-                    
-                                    <label class="form-label">
-                    
-                                        Priority
-                    
-                                    </label>
-                    
-                                    <select
-                                        id="taskPriority"
-                                        class="form-select">
-                    
-                                        <option>Low</option>
-                    
-                                        <option selected>Medium</option>
-                    
-                                        <option>High</option>
-                    
-                                    </select>
-                    
-                                </div>
-                    
-                                <!-- Due Date -->
-                    
-                                <div class="col-md-4 mb-4">
-                    
-                                    <label class="form-label">
-                    
-                                        Due Date
-                    
-                                    </label>
-                    
+            
                                     <input
-                                        type="date"
-                                        id="taskDate"
-                                        class="form-control">
-                    
+                                        id="taskTitle"
+                                        class="form-control"
+                                        type="text"
+                                        placeholder="Enter task title">
+            
                                 </div>
-                    
-                            </div>
-                    
-                            <!-- Button -->
-                    
-                            <div class="text-end">
-                    
+            
+                                <div class="mb-3">
+            
+                                    <label class="form-label">
+                                        Description
+                                    </label>
+            
+                                    <textarea
+                                        id="taskDescription"
+                                        rows="3"
+                                        class="form-control"
+                                        placeholder="Task description"></textarea>
+            
+                                </div>
+            
+                                <div class="row">
+            
+                                    <div class="col-md-4 mb-3">
+            
+                                        <select
+                                            id="taskCategory"
+                                            class="form-select">
+            
+                                            <option>Study</option>
+                                            <option>Work</option>
+                                            <option>Personal</option>
+            
+                                        </select>
+            
+                                    </div>
+            
+                                    <div class="col-md-4 mb-3">
+            
+                                        <select
+                                            id="taskPriority"
+                                            class="form-select">
+            
+                                            <option>High</option>
+                                            <option>Medium</option>
+                                            <option>Low</option>
+            
+                                        </select>
+            
+                                    </div>
+            
+                                    <div class="col-md-4 mb-3">
+            
+                                        <input
+                                            id="taskDate"
+                                            type="date"
+                                            class="form-control">
+            
+                                    </div>
+            
+                                </div>
+            
                                 <button
-                                    id="addTaskBtn"
-                                    type="submit"
-                                    class="btn btn-primary btn-lg px-5">
-                    
-                                    <i class="bi bi-plus-circle me-2"></i>
-                    
-                                    Add Task
-                    
+                                    class="btn btn-primary">
+            
+                                    ➕ Add Task
+            
                                 </button>
-                    
-                            </div>
-                    
-                        </form>
-                    
-                    </div>
-  
-                  </div>
-  
-                  <!-- Search Card -->
-  
-                  <div class="planner-card mb-4">
-  
-                      <div class="card-header-custom">
-  
-                          <h3>
-                              <i class="bi bi-search"></i>
-                              Search Tasks
-                          </h3>
-  
-                      </div>
-  
-
-                      <div id="searchSection">
-
-                        <div class="mb-4">
-                    
-                            <label for="searchTask" class="form-label">
-                    
-                                Search Tasks
-                    
-                            </label>
-                    
-                            <div class="input-group">
-                    
-                                <span class="input-group-text">
-                    
-                                    <i class="bi bi-search"></i>
-                    
-                                </span>
-                    
-                                <input
-                                    type="text"
-                                    id="searchTask"
-                                    class="form-control"
-                                    placeholder="Search your tasks...">
-                    
-                            </div>
-                    
+            
+                            </form>
+            
                         </div>
-                    
+            
                     </div>
-  
-                  </div>
-  
-                  <!-- Filter Card -->
-  
-                  <div class="planner-card mb-4">
-  
-                      <div class="card-header-custom">
-  
-                          <h3>
-                              <i class="bi bi-funnel-fill"></i>
-                              Filter Tasks
-                          </h3>
-  
-                      </div>
-  
-                     
-                      <div id="filterSection">
-
-                        <div class="filter-buttons d-flex flex-wrap gap-2">
-                    
-                            <button
-                                class="btn btn-primary filter-btn active"
-                                data-filter="all">
-                    
-                                All
-                    
-                            </button>
-                    
-                            <button
-                                class="btn btn-outline-primary filter-btn"
-                                data-filter="pending">
-                    
-                                Pending
-                    
-                            </button>
-                    
-                            <button
-                                class="btn btn-outline-primary filter-btn"
-                                data-filter="completed">
-                    
-                                Completed
-                    
-                            </button>
-                    
-                            <button
-                                class="btn btn-outline-primary filter-btn"
-                                data-filter="high">
-                    
-                                High Priority
-                    
-                            </button>
-                    
+            
+                    <!-- Today's Overview -->
+            
+                    <div class="col-lg-5">
+            
+                        <div class="planner-card h-100">
+            
+                            <h3 class="widget-title">
+                                📊 Today's Overview
+                            </h3>
+            
+                            <p class="mb-2">
+                                Tasks Completed
+                            </p>
+            
+                            <div class="progress mb-4">
+            
+                                <div
+                                    id="goalProgress"
+                                    class="progress-bar"
+                                    style="width:0%">
+            
+                                </div>
+            
+                            </div>
+            
+                            <p class="mb-2">
+                                Productivity
+                            </p>
+            
+                            <div class="progress mb-4">
+            
+                                <div
+                                    class="progress-bar"
+                                    style="width:80%">
+            
+                                </div>
+            
+                            </div>
+            
+                            <p class="mb-2">
+                                Daily Goal
+                            </p>
+            
+                            <div class="progress">
+            
+                                <div
+                                    class="progress-bar"
+                                    style="width:65%">
+            
+                                </div>
+            
+                            </div>
+            
                         </div>
+            
+                    </div>
+            
+                </div>
+  
+                           
+                                    
+                 <!----calender-->
+  
+                  <div class="row g-4 mt-1">
+
+                    <div class="col-lg-6">
+                    
+                    <div class="planner-card h-100">
+                    
+                    <h3 class="widget-title">
+                    📅 Calendar
+                    </h3>
+                    
+                    <img
+                    src="calendar.png"
+                    class="img-fluid rounded-4">
                     
                     </div>
-  
-                  </div>
-  
-                  <!-- Task List -->
-  
-                  <div class="planner-card">
-  
-                      <div class="card-header-custom">
-  
-                          <h3>
-                              <i class="bi bi-list-task"></i>
-                              My Tasks
-                          </h3>
-  
-                      </div>
-  
                     
-                      <div id="taskContainer">
+                    </div>
+                    
+                    <div class="col-lg-6">
+                    
+                    <div class="planner-card h-100">
+                    
+                    <h3 class="widget-title">
+                    📌 Upcoming Tasks
+                    </h3>
+                    
+                    <div id="deadlineList">
+                    
+                    </div>
+                    
+                    </div>
+                    
+                    </div>
+                    
+                    </div>
+                    <!--habit-->
+
+
+                    <div class="row g-4 mt-1">
+
+                        <div class="col-lg-6">
+                        
+                        <div class="planner-card h-100">
+                        
+                        <h3 class="widget-title">
+                        
+                        🔥 Habit Tracker
+                        
+                        </h3>
+                        
+                        <div id="habitPreview">
+                        
+                        <p>Wake up early ✔</p>
+                        
+                        <p>Drink Water ✔</p>
+                        
+                        <p>Workout ✖</p>
+                        
+                        </div>
+                        
+                        </div>
+                        
+                        </div>
+                        
+                        <div class="col-lg-6">
+                        
+                        <div class="planner-card h-100">
+                        
+                        <h3 class="widget-title">
+                        
+                        🎯 Today's Focus
+                        
+                        </h3>
+                        
+                        <blockquote>
+                        
+                        Focus on being productive instead of busy.
+                        
+                        </blockquote>
+                        
+                        </div>
+                        
+                        </div>
+                        
+                        </div>
+
+<!---planner-->
+
+
+                        <div class="row g-4 mt-1">
+
+                            <div class="col-lg-6">
+                            
+                            <div class="planner-card h-100">
+                            
+                            <h3 class="widget-title">
+                            
+                            💡 Productivity Tip
+                            
+                            </h3>
+                            
+                            <p>
+                            
+                            Break large tasks into smaller tasks.
+                            
+                            </p>
+                            
+                            </div>
+                            
+                            </div>
+                            
+                            <div class="col-lg-6">
+                            
+                            <div class="planner-card h-100">
+                            
+                            <h3 class="widget-title">
+                            
+                            📝 Quick Notes
+                            
+                            </h3>
+                            
+                            <ul>
+                            
+                            <li>Complete Java</li>
+                            
+                            <li>Portfolio</li>
+                            
+                            <li>Practice DSA</li>
+                            
+                            </ul>
+                            
+                            </div>
+                            
+                            </div>
+                            
+                            </div>
+
+
 
                         <!-- Empty State -->
                     
@@ -643,7 +541,7 @@ Add Task Card
                                 src="preview.jpeg"
                                 class="img-fluid mb-4"
                                 style="max-width:220px;"
-                                alt="preview
+                                alt="preview">
                     
                             <h4>
                     
@@ -663,141 +561,218 @@ Add Task Card
   
                   </div>
   
-              </div>
-  
+              
+
+
              <!-- =========================
      RIGHT SIDEBAR
 ========================= -->
-
 <div class="col-lg-4">
 
-    <!-- Calendar Widget -->
+    <!-- Daily Quote -->
+
     <div class="planner-card mb-4">
 
-        <div id="calendarCard">
+        <div class="row align-items-center">
 
-            <h3 class="widget-title">
-                📅 Calendar
-            </h3>
+            <div class="col-7">
 
-            <img
-                src="calendar.png"
-                alt="Calendar"
-                class="img-fluid rounded-4 mb-3">
+                <h3 class="widget-title">
+                    ❤️ Daily Quote
+                </h3>
 
-            <p class="text-muted mb-0">
-                Today is a great day to finish something you've been postponing.
-            </p>
+                <blockquote class="mb-0">
 
-        </div>
+                    Small progress each day adds up to big results.
 
-    </div>
-
-    <!-- Goal Widget -->
-    <div class="planner-card mb-4">
-
-        <div id="goalCard">
-
-            <h3 class="widget-title">
-                🎯 Today's Goal
-            </h3>
-
-            <h4 class="mb-3">
-                Complete 5 Tasks
-            </h4>
-
-            <div class="progress">
-
-                <div
-                    id="goalProgress"
-                    class="progress-bar"
-                    style="width:0%">
-                </div>
+                </blockquote>
 
             </div>
 
-            <small class="text-muted">
-                Stay consistent every day 🌸
-            </small>
+            <div class="col-5 text-center">
+
+                <img
+                    src="girl.png"
+                    class="img-fluid rounded-circle">
+
+            </div>
 
         </div>
 
     </div>
 
-    <!-- Quote Widget -->
+    <!-- Statistics -->
+
     <div class="planner-card mb-4">
 
-        <div id="quoteCard">
+        <h3 class="widget-title">
 
-            <h3 class="widget-title">
-                💖 Quote of the Day
-            </h3>
+            📊 Statistics
 
-            <blockquote class="mb-0">
-                "Small progress each day adds up to big results."
-            </blockquote>
+        </h3>
+
+        <div class="row text-center">
+
+            <div class="col-6">
+
+                <h2 id="totalTasks">
+                    0
+                </h2>
+
+                <small>Total</small>
+
+            </div>
+
+            <div class="col-6">
+
+                <h2 id="completedTasks">
+                    0
+                </h2>
+
+                <small>Completed</small>
+
+            </div>
+
+            <div class="col-6 mt-4">
+
+                <h2 id="pendingTasks">
+                    0
+                </h2>
+
+                <small>Pending</small>
+
+            </div>
+
+            <div class="col-6 mt-4">
+
+                <h2 id="priorityTasks">
+                    0
+                </h2>
+
+                <small>Priority</small>
+
+            </div>
 
         </div>
 
     </div>
 
-    <!-- Upcoming Deadlines -->
-    <div class="planner-card mb-4">
+    <!-- Today's Goal -->
 
-        <div id="deadlineCard">
-
-            <h3 class="widget-title">
-                ⏰ Upcoming Deadlines
-            </h3>
-
-            <ul
-                id="deadlineList"
-                class="list-unstyled mb-0">
-
-                <li>No upcoming deadlines 🌸</li>
-
-            </ul>
-
-        </div>
-
-    </div>
-
-    <!-- Productivity Tip -->
     <div class="planner-card">
 
-        <div id="tipsCard">
+        <h3 class="widget-title">
 
-            <h3 class="widget-title">
-                💡 Productivity Tip
-            </h3>
+            🎯 Today's Goal
 
-            <p class="mb-0">
-                Focus on completing one important task before checking social media.
-            </p>
+        </h3>
+
+        <p>
+
+            Complete at least
+
+            <strong>5 Tasks</strong>
+
+            today 🌸
+
+        </p>
+
+        <div class="progress">
+
+            <div
+                id="goalProgress2"
+                class="progress-bar"
+                style="width:0%">
+
+            </div>
 
         </div>
 
     </div>
 
 </div>
-<footer class="py-5 bg-dark text-white">
 
-    <div class="container text-center">
 
-        <h4 class="mb-3">
-            shy_xhaTodo
-        </h4>
 
-        <p class="text-white-50">
-            Organize beautifully. Achieve effortlessly.
-        </p>
+<footer class="footer py-5">
 
-        <hr>
-
-        <p class="small mb-0">
-            © 2026 shy_xhaTodo. All Rights Reserved.
-        </p>
-
+    <div class="container">
+    
+    <div class="row align-items-center">
+    
+    <div class="col-lg-4">
+    
+    <h3>
+    
+    🌸 shy_xhaTodo
+    
+    </h3>
+    
+    <p>
+    
+    Organize beautifully.
+    
+    Achieve effortlessly.
+    
+    </p>
+    
     </div>
+    
+    <div class="col-lg-4 text-center">
+    
+    <h4>
+    
+    You are doing great,
+    
+    Shikha! 💖
+    
+    </h4>
+    
+    <p>
+    
+    Keep going.
+    
+    You're closer than yesterday.
+    
+    </p>
+    
+    </div>
+    
+    <div class="col-lg-4 text-end">
+    
+    <p>
+    
+    © 2026
+    
+    </p>
+    
+    <p>
+    
+    All Rights Reserved.
+    
+    </p>
+    
+    </div>
+    
+    </div>
+    
+    </div>
+    
+    </footer>
 
-</footer>
+
+<!-- Bootstrap JS -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Custom JS -->
+
+<script src="script.js"></script>
+
+<button id="backToTop">
+    ⬆
+    </button>
+
+</body>
+
+</html>
